@@ -1,0 +1,58 @@
+#navbar {
+    display: grid;
+    padding-left: 10vw;
+    padding-bottom: 1vh;
+    grid-template-columns: 1vw 1vw 1vw 1vw auto;
+    grid-template-rows: 7vh;
+    justify-content: space-between;
+    height: 7.5vh;
+    width: 100%;
+    position: fixed;
+    background-color: white;
+    font-size: .7rem;
+}
+
+#logo {
+    height: 50px;
+    width: auto;
+    padding-top: 1vh;
+}
+
+#pricing {
+    margin-left: 23vw;
+    font-weight: 400;
+    padding-top: 1.5vh;
+}
+
+#login {
+    margin-left: 12vw;
+    font-weight: 400;
+    padding-top: 1.5vh;
+}
+
+#getstarted {
+    background-color: #6DB8FE;
+    border-radius: 50px;
+    padding-top: 1.5vh;
+    margin-bottom: 0vh;
+    margin-right: 15vw;
+    padding-left: 2vw;
+    padding-right: 2vw;
+    justify-content: center;
+    font-weight: 400;
+    transition: background-color .2s;
+}
+
+#getstarted:hover {
+    background-color: #63a6e5;
+    color: white;
+}
+
+#name {
+    margin-left: -13vw;
+    padding-top: 1vh;
+    font-weight: 400;
+    font-family: sans-serif;
+    color: black;
+    font-size: 1.3rem;
+}
