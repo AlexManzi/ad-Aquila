@@ -1,0 +1,38 @@
+#signuppage {
+    background-image: url('../pics/bg3.png');
+    background-repeat:initial;
+    background-size:cover;
+    height: 110vh;
+    display: grid;
+    grid-template-columns: auto;
+    justify-content: center;
+}
+
+#signupbox {
+    display: grid;
+    grid-template-rows: 6vh 6vh 6vh 6vh 5vh;
+    margin-top: -40vh;
+    grid-template-columns: 20vw;
+    margin-left: 7vw;
+}
+
+#names {
+    display: grid;
+    grid-template-columns: 8vw 8vw;
+    justify-content: space-between
+}
+
+#signupheading {
+    margin-top: 28vh;
+    margin-bottom: 5vh;
+    text-align: center;
+    font-size: 1.8rem;
+    margin-left: 4vw;
+}
+
+.inputs {
+    margin-bottom: 1vh;
+    font-size: 1rem;
+    border-radius: 5px;
+    padding: 10px;
+}

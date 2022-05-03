@@ -22,19 +22,22 @@
     margin-left: 23vw;
     font-weight: 400;
     padding-top: 1.5vh;
+    color: black;
 }
 
 #login {
     margin-left: 12vw;
     font-weight: 400;
     padding-top: 1.5vh;
+    color: black;
 }
 
 #getstarted {
     background-color: #6DB8FE;
     border-radius: 50px;
+    color: black;
     padding-top: 1.5vh;
-    margin-bottom: 0vh;
+    padding-bottom: 1.5vh;
     margin-right: 15vw;
     padding-left: 2vw;
     padding-right: 2vw;

@@ -1,0 +1,60 @@
+#loginparent{
+    background-image: url('../pics/bg3.png');
+    background-repeat:initial;
+    background-size:cover;
+    height: 110vh;
+    display: grid;
+    grid-template-columns: auto;
+    justify-content: center;
+}
+
+
+#loginbox {
+    margin-top: 29vh;
+    padding-bottom: 12vh;
+    margin-left: 8vw;
+    margin-right: 4vw;
+    height: 20vh;
+    width: 35vw;
+    background-color: white;
+    border-radius: 5px;   
+    text-align: center;
+    font-family: sans-serif;
+    font-weight: 200;
+    font-size: 1.3rem;
+}
+
+#loginheading {
+    margin-top: 0vh;
+}
+
+#logins {
+    display: grid;
+    grid-template-columns: 35vh;
+    grid-template-rows: 7vh 7vh 7vh;
+    justify-content: center;
+    height: 40%;
+    width: 100%;
+}
+
+.logininput {
+    margin-bottom: 2vh;
+    font-size: 1rem;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+#sarea {
+    display: grid;
+    grid-template-columns: auto auto;
+    font-size: .9rem;
+    margin-left: 11vw;
+    margin-top: 12vh;
+}
+
+#signup {
+    margin-right: 11vw;
+    font-weight: bold;
+    color: darkgreen;
+}
+

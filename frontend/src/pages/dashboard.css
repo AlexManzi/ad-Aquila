@@ -1,0 +1,52 @@
+#wholedashboard {
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: space-evenly;
+    padding-top: 12vh;
+}
+
+#campaignsummary {
+    border: 2px solid grey;
+    margin-right: 20vw;
+    padding: 2vh;
+    width: 48vw;
+    height: 80vh;
+    border-radius: 2px;
+}
+
+#quicklookcontainer {
+    display: grid;
+    padding-top: 3vh;
+    grid-template-columns: auto auto;
+    justify-content: space-evenly;
+}
+
+.container {
+    width: 18vw;
+    height: 60vh;
+    background-color: lightgrey
+}
+
+#btncontainer {
+    margin-bottom: 5vh;
+}
+
+#allaccountsbtn {
+    background-color: #6DB8FE;
+    border-radius: 30px;
+    color: black;
+    padding-top: 1vh;
+    font-size: 1.3rem;
+    padding-bottom: 1vh;
+    margin-left: 31vw;
+    padding-left: 2.5vw;
+    padding-right: 1vw;
+    justify-content: center;
+    font-weight: 400;
+    transition: background-color .2s;
+}
+
+#allaccountsbtn:hover {
+    background-color: #63a6e5;
+    color: white;
+}

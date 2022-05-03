@@ -1,0 +1,68 @@
+#pricingpage {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: 5vh;
+    padding-top: 10vh;
+    background-color: #47498a;
+    justify-content: center;
+    text-align: center;
+    height: 140vh;
+    width: 100%;
+    font-family: sans-serif;
+}
+
+#heading {
+    font-size: 3rem;
+    color: white;
+}
+
+#pricingpage1 {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    justify-content: center;
+    padding-top: 11vh;
+    column-gap: 8rem;
+}
+
+.priceoption {
+    background-color: white;
+    height: 65vh;
+    border: 1px solid white;
+    border-radius: 4px;
+    width: 20vw;
+}
+
+#Pbutton {
+    background-color: #6DB8FE;
+    border-radius: 50px;
+    text-align: center;
+    padding-top: 1.5vh;
+    margin-bottom: 0vh;
+    padding-bottom: 1.5vh;
+    padding-left: 2vw;
+    padding-right: 2vw;
+}
+
+#Bbutton {
+    background-color: #6DB8FE;
+    border-radius: 50px;
+    padding-top: 1.5vh;
+    margin-bottom: 0vh;
+    padding-bottom: 1.5vh;
+    padding-left: 2vw;
+    padding-right: 2vw;
+}
+
+#Ebutton {
+    background-color: #6DB8FE;
+    border-radius: 50px;
+    padding-top: 1.5vh;
+    padding-bottom: 1.5vh;
+    padding-left: 2vw;
+    padding-right: 2vw;
+}
+
+.priceline {
+    width: 80%;
+    margin-top: 2vh;
+}
