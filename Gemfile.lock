@@ -186,7 +186,7 @@ DEPENDENCIES
   puma (~> 5.0)
   rack-cors
   rails (~> 7.0.2, >= 7.0.2.3)
-  stripe (>= 2.8, < 6.0)
+  stripe
   tzinfo-data
 
 RUBY VERSION

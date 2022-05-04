@@ -2,7 +2,7 @@ import React from 'react'
 import './dashboard.css'
 import { Link } from 'react-router-dom'
 
-function Dashboard() {
+function Dashboard({user}) {
   return (
     <div id="wholedashboard">
         <div id="campaignsummary">
@@ -18,7 +18,7 @@ function Dashboard() {
             </div>
         </div>
         <div id="campaignbio">
-            <h2>Welcome back, User!</h2>
+            <h2>Welcome back, {user.first_name}!</h2>
         </div>
     </div>
   )

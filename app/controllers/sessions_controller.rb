@@ -11,7 +11,7 @@ class SessionsController < ApplicationController
     end
 
     def destroy
-        if session.indlude? :user_id 
+        if session.include? :user_id 
             session.delete :user_id
             head :no_content
         else

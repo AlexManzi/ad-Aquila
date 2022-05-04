@@ -9,10 +9,10 @@ class UsersController < ApplicationController
     end
 
     def show
-        user_id == session[:user_id]
+        user_id = session[:user_id]
         if user_id 
             user = User.find(user_id)
-            render json: user, status: :created, include: [:values]
+            render json: user, status: :created
         else
             render json: { error: "Unauthorized" }, status: :unauthorized
         end

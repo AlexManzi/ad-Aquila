@@ -48,6 +48,6 @@ end
 
 gem 'pay', '~> 2.0'
 
-gem 'stripe', '< 6.0', '>=2.8'
+gem 'stripe'
 
 gem "active_model_serializers", "~> 0.10.13"

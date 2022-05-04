@@ -23,6 +23,7 @@
     font-weight: 400;
     padding-top: 1.5vh;
     color: black;
+    white-space: nowrap
 }
 
 #login {

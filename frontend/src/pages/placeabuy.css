@@ -1,0 +1,16 @@
+#buypage {
+    background-color: #47498a;
+    height: 150vh;
+    width: 100%;
+    display: grid;
+    grid-template-columns: auto;
+    justify-content: center;
+    padding-top: 15vh;
+}
+
+#buyform {
+    background-color: white;
+    border-radius: 2px;
+    height: 65vh;
+    width: 70vw;
+}

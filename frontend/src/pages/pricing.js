@@ -1,24 +1,25 @@
 import React from 'react'
 import './pricing.css'
 
+
 function Pricing() {
 
-function handleCheckout(){
-    fetch('http://localhost:3000/create-checkout-session',{
-        method: "POST",
-        headers: {'Content-Type': 'application/json'}, 
-        body: JSON.stringify({
-            price: 'prod_LQKKfH7pFt4BQq'
-        }),
-        credentials: "same-origin",
-        })
-        .then(resp=> resp.json())
-        .then(data=>{
-        window.location.href = data.url;
-        })
-        .catch(error => {
-        })
-    }
+// function handleCheckout(){
+//     fetch('http://localhost:3000/create-checkout-session',{
+//         method: "POST",
+//         headers: {'Content-Type': 'application/json'}, 
+//         body: JSON.stringify({
+//             price: 'prod_LQKKfH7pFt4BQq'
+//         }),
+//         credentials: "same-origin",
+//         })
+//         .then(resp=> resp.json())
+//         .then(data=>{
+//         window.location.href = data.url;
+//         })
+//         .catch(error => {
+//         })
+//     }
 
     return (
     <div id="pricingpage">
@@ -31,7 +32,7 @@ function handleCheckout(){
                 <p>per month</p>
             </div>
             <p>For personal use and managing a few accounts</p>
-            <button id="Pbutton" onClick={handleCheckout}>Buy Now</button>
+            <button id="Pbutton">Buy Now</button>
             <hr className='priceline'></hr>
         </div>
         <div className="priceoption" id="constitution">

@@ -2,8 +2,7 @@ import React, { useState, useEffect} from 'react'
 import { Link } from "react-router-dom";
 import "./login.css"
 
-function Login() {
-
+function Login({ setUser }) {
   let [emailLogin, setEmailLogin] = useState('')
   let [passwordLogin, setPasswordLogin] = useState('')
 
@@ -12,17 +11,13 @@ function Login() {
     }  
   )
 
-  function handleEmailLogin(e) {
-    setEmailLogin(e.target.value)
-  }
-
-  function handlePasswordLogin(e) {
-    setPasswordLogin(e.target.value)
+  function alertVibes() {
+    alert('You are now logged in!')
   }
 
   function handleLogin(e) {
     e.preventDefault();
-    fetch("http://localhost:3000/login", {
+    fetch("/login", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
@@ -33,10 +28,20 @@ function Login() {
       })
       })
       .then(resp => resp.json())
-      .then((user) => console.log(user))
+      .then((data) => setUser(data))
+      window.location.reload();
+      alertVibes()
   }
 
+  function handleEmailLogin(e) {
+    setEmailLogin(e.target.value)
+  }
 
+  function handlePasswordLogin(e) {
+    setPasswordLogin(e.target.value)
+  }
+
+  
   return (
     <form>
     <div id="loginparent">
