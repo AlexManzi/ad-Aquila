@@ -2,7 +2,7 @@ import React, { useState, useEffect} from 'react'
 import { Link } from "react-router-dom";
 import "./login.css"
 
-function Login({ setUser }) {
+function Login() {
   let [emailLogin, setEmailLogin] = useState('')
   let [passwordLogin, setPasswordLogin] = useState('')
 
@@ -28,8 +28,7 @@ function Login({ setUser }) {
       })
       })
       .then(resp => resp.json())
-      .then((data) => setUser(data))
-      window.location.reload();
+      .then((data) => window.location.reload());
       alertVibes()
   }
 

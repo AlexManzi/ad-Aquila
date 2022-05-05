@@ -6,7 +6,7 @@ function Campaignpage() {
 
     let randomColor = Math.floor(Math.random()*16777215).toString(16);
 
-  return (
+return (
     <div id="campaignpage">
         <h2>Here's what's in flight!</h2>
         <div id="cardcontainer">
@@ -19,7 +19,7 @@ function Campaignpage() {
         <Campaigncard />
         </div>
     </div>
-  )
+    )
 }
 
 export default Campaignpage

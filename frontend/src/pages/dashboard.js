@@ -2,7 +2,19 @@ import React from 'react'
 import './dashboard.css'
 import { Link } from 'react-router-dom'
 
-function Dashboard({user}) {
+function Dashboard({loggedIn}) {
+
+  let guestName = (loggedIn ? loggedIn.first_name : "")
+  let infoTest = (loggedIn ? loggedIn.clients : "")
+
+  let mappedArray = (loggedIn ? infoTest.map(client => {
+        return (
+          <h2>{client.name}</h2>
+        )
+  }) : "" )
+
+  console.log(loggedIn)
+
   return (
     <div id="wholedashboard">
         <div id="campaignsummary">
@@ -18,7 +30,8 @@ function Dashboard({user}) {
             </div>
         </div>
         <div id="campaignbio">
-            <h2>Welcome back, {user.first_name}!</h2>
+            <h2>Welcome back, {guestName} !</h2>
+            {mappedArray}
         </div>
     </div>
   )

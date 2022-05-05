@@ -1,7 +1,4 @@
 class ReservationSerializer < ActiveModel::Serializer
-  attributes :id
-  has_one :user
+  attributes :id, :name, :price, :isci_code, :spot_time, :spot_length, :spot_preview, :comments
   has_one :client
-  has_one :slot
-  has_one :station
 end

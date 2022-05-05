@@ -1,0 +1,19 @@
+#respage {
+    display: grid;
+    grid-template-columns: auto;
+    padding-top: 10vh;
+}
+
+#spottimes {
+    display: grid;
+    grid-template-columns: auto;
+    justify-content: end;
+    padding-right: 10vw;
+    margin-top: -25vh;
+}
+
+#spotvibes {
+    display: grid;
+    grid-template-columns: auto auto;
+
+}

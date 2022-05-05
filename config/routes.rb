@@ -1,10 +1,7 @@
 Rails.application.routes.draw do
-  resources :sessions
-  resources :reservations
-  resources :slots
-  resources :stations
   resources :clients
-  resources :users, only: [:create]
+  resources :reservations
+  resources :users
   # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
 
   get "checkout", to: "checkouts#show"
