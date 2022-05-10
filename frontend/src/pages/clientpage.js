@@ -11,8 +11,12 @@ function Clientpage({selectedClient}) {
   let [spotDate, setSpotDate] = useState('')
   let [reservations, setReservations] = useState([])
 
-  console.log(spotDate)
-  
+  let clientName = (client ? client.name : "")
+  let clientBudget = (client ? client.budget : "")
+  let clientContact = (client ? client.contact_info : "")
+  let clientReservations = (client ? client.reservations : "")
+  let clientStation = (client ? client.station : "")
+  let clientComments = (client ? client.comments : "")
   let clientId = (client ? client.id : "" )
 
   useEffect(() => {
@@ -31,22 +35,12 @@ function Clientpage({selectedClient}) {
         .then(response => setReservations(response)) : "")
   }, [clientId])
     
-
-  console.log(clientId)
-
-  let clientName = (client ? client.name : "")
-  let clientBudget = (client ? client.budget : "")
-  let clientContact = (client ? client.contact_info : "")
-  let clientReservations = (client ? client.reservations : "")
-  let clientStation = (client ? client.station : "")
-  let clientComments = (client ? client.comments : "")
-  
-
   let resInfo = (client ? reservations.map(res => {
     return (
       <Clientres 
         key={res.id}
         res={res}
+        handleDelete={handleDelete}
         />
     )
   }) : "")
@@ -69,12 +63,16 @@ function Clientpage({selectedClient}) {
             })
             .then(resp => resp.json()
             .then(r => window.location.reload())
-            )}
-              
+  )}
 
-    console.log(reservations)
-
-
+  function handleDelete(id) {
+    fetch(`/reservations/${id}`, {
+      method: 'DELETE',
+    })
+    .then(res => res.text()) // or res.json()
+    .then(res => console.log(res))
+    window.location.reload();
+  }
 
   function handleSetLength(e) {
     setSpotLength(e.target.value)

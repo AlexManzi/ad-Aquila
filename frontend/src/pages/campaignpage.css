@@ -2,6 +2,7 @@
     display: grid;
     grid-template-columns: auto;
     padding-top: 10vh;
+    font-family: 'Lato', sans-serif;
 }
 
 #cardcontainer {

@@ -2,6 +2,7 @@
     display: grid;
     padding-top: 12vh;
     grid-template-columns: auto auto;
+    font-family: 'Lato', sans-serif;
 }
 
 #respage {
@@ -48,8 +49,8 @@
 #clientSuperParent {
     height: 75vh;
     background-color: #47498a;
-    margin-right: 5vw;
-    margin-left: 10vw;
+    margin-right: 4vw;
+    margin-left: 8vw;
     overflow-y: scroll;
     border-radius: 2px;
 

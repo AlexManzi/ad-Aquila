@@ -6,10 +6,11 @@
     grid-template-columns: auto;
     justify-content: center;
     padding-top: 15vh;
+    font-family: 'Lato', sans-serif;
 }
 
 #buyheading {
-    margin-bottom: -8vh;
+    margin-bottom: -10vh;
     text-align: center;
 }
 
@@ -30,7 +31,40 @@
 
 .buyinputs {
     height: 7vh;
-    width: 20vw;
-    margin-top: 2vh;
+    width: 22vw;
+    margin-top: 1vh;
     font-size: 1.2rem;
 }
+
+#bottombuttons {
+    display: grid;
+    justify-content: center;
+    grid-template-columns: 40vw;
+}
+
+#commentsbar{
+    height: 7vh;
+    width: 35vw;
+    font-size: 1.2rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#addButton {
+    margin-bottom: 3vh;
+    height: 5vh;
+    justify-content: center;
+    width: 20vw;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 1.1rem;
+    background-color: #6DB8FE;
+    border-radius: 50px;
+    border: 1px solid #6DB8FE;
+}
+
+#addButton:hover {
+    background-color: #63a6e5;
+    color: white;
+}
+

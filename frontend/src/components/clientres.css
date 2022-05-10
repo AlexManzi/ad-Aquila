@@ -1,7 +1,13 @@
 #resinfo {
     display: grid;
-    grid-template-columns: auto 1vw 1vw 1vw .5vw;
+    grid-template-columns: auto 1vw 1vw 1vw .5vw 1vw;
     justify-content: space-evenly;
     background-color: lightgray;
     border: 1px solid black;
+}
+
+#trashbin {
+    height: 30px;
+    width: auto;
+    padding-top: 1.7vh;
 }

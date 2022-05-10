@@ -3,6 +3,7 @@
     grid-template-columns: auto auto;
     justify-content: space-evenly;
     padding-top: 12vh;
+    font-family: 'Lato', sans-serif;
 }
 
 #campaignsummary {

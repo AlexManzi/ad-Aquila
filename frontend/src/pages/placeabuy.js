@@ -55,15 +55,17 @@ function Placeabuy() {
     return (
     <div id="buypage">
         <div id="buyform">
-            <h2 id="buyheading">Enter Your Flight Information Here!</h2>
+            <h2 id="buyheading">Enter Your Ad Campaign Information Here</h2>
             <div id="buyinputs">
             <input className="buyinputs" onChange={handleSetClient} placeholder='Enter The Campaign Client'></input>
             <input className="buyinputs" onChange={handleSetStation} placeholder='Enter The Station Provider'></input>
             <input className="buyinputs" onChange={handleSetTotBudget} placeholder='Enter The Total Budget The Campaign'></input>
             <input className="buyinputs" onChange={handleSetContactInfo} placeholder='Enter The The Contact Info For The Buy'></input>
-            <input className="buyinputs" onChange={handleSetComments} placeholder='Enter Any Comments For This Buy' id="commentsbar"></input>
             </div>
-            <button onClick={handleAddClient}>Add Flight!</button>
+            <div id="bottombuttons">
+            <input onChange={handleSetComments} placeholder='Enter Any Comments For This Buy' id="commentsbar"></input>
+            <button id="addButton"onClick={handleAddClient}>Add This Campaign!</button>
+            </div>
         </div>
     </div>
 )
