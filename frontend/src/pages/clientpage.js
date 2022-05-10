@@ -10,8 +10,10 @@ function Clientpage({selectedClient}) {
   let [isci, setIsci] = useState('')
   let [spotDate, setSpotDate] = useState('')
   let [reservations, setReservations] = useState([])
-  let clientId = (client ? client.id : "")
-  let id = (client ? client.id : "8" )
+
+  console.log(spotDate)
+  
+  let clientId = (client ? client.id : "" )
 
   useEffect(() => {
     const data = window.localStorage.getItem('clientInfo')
@@ -19,15 +21,18 @@ function Clientpage({selectedClient}) {
   }, [])
 
   useEffect(() => {
-    fetch(`/clientReservations/?id=${id}`, {
+    let ternary = (client ? fetch(`/clientReservations/?id=${clientId}`, {
       method: "GET",
       headers: {
       "Content-Type": "application/json",
       }
       })
       .then(resp => resp.json())
-        .then(response => setReservations(response))
-  }, [])
+        .then(response => setReservations(response)) : "")
+  }, [clientId])
+    
+
+  console.log(clientId)
 
   let clientName = (client ? client.name : "")
   let clientBudget = (client ? client.budget : "")
@@ -90,8 +95,6 @@ function Clientpage({selectedClient}) {
   function handleSetDate(e) {
     setSpotDate(e.target.value)
   }
-
-
 
   return (
     <div id="wholerespage">

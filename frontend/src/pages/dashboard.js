@@ -68,7 +68,7 @@ function Dashboard({loggedIn}) {
         </div>
         <div id="campaignbio">
             <h2>Welcome back, {guestName}!</h2>
-            <h3>How is {guestOrg} doing today? </h3>
+            <h3>How's life at {guestOrg} today?</h3>
             <br></br>
             <div id="clientlist">
             <h2>Active Clients</h2>
