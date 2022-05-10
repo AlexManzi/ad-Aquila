@@ -32,7 +32,11 @@ function Pricing() {
                 <p>per month</p>
             </div>
             <p>For personal use and managing a few accounts</p>
-            <button id="Pbutton">Buy Now</button>
+            <form action="/create-checkout-session" method="POST">
+                <button id="Pbutton" type="submit">
+                    Buy Now
+                    </button>
+            </form>
             <hr className='priceline'></hr>
         </div>
         <div className="priceoption" id="constitution">

@@ -1,7 +1,14 @@
+#wholerespage {
+    display: grid;
+    padding-top: 12vh;
+    grid-template-columns: auto auto;
+}
+
 #respage {
     display: grid;
     grid-template-columns: auto;
-    padding-top: 10vh;
+    grid-template-rows: 8vh 8vh 8vh 8vh 8vh;
+    padding-left: 40px;
 }
 
 #spottimes {
@@ -15,5 +22,44 @@
 #spotvibes {
     display: grid;
     grid-template-columns: auto auto;
+}
 
+#clientresparent {
+    display: grid;
+    grid-template-columns: auto auto auto auto 1vw;
+    justify-content: space-evenly;
+    
+    background-color: #47498a;
+    padding-right: 3vw;
+    color: white;
+}
+
+#resinfopost {
+    margin-top: -30vh;
+    padding-left: 40px;
+    display: grid;
+    grid-template-columns: auto;
+}
+
+.resinput {
+    margin-bottom: 2vh;
+}
+
+#clientSuperParent {
+    height: 75vh;
+    background-color: #47498a;
+    margin-right: 5vw;
+    margin-left: 10vw;
+    overflow-y: scroll;
+    border-radius: 2px;
+
+}
+
+#flightBtn {
+    width: 20vw;
+    margin-left: 12vw;
+    font-size: 1rem;
+    background-color: #6DB8FE;
+    border-radius: 15px;
+    border: 2px solid #6DB8FE;;
 }

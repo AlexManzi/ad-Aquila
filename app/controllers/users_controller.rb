@@ -2,7 +2,7 @@ class UsersController < ApplicationController
 
     def index 
         users = User.all 
-        render json: users, include: :clients
+        render json: users.to_json(:include => { :clients => {:include => :reservations}})
     end
 
     def create
@@ -17,7 +17,7 @@ class UsersController < ApplicationController
         user_id = session[:user_id]
         if user_id 
             user = User.find(user_id)
-            render json: user, include: :clients, status: :created
+            render json: user.to_json(:include => { :clients => {:include => :reservations}})
         else
             render json: { error: "Unauthorized" }, status: :unauthorized
         end

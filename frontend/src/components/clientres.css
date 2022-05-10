@@ -1,0 +1,7 @@
+#resinfo {
+    display: grid;
+    grid-template-columns: auto 1vw 1vw 1vw .5vw;
+    justify-content: space-evenly;
+    background-color: lightgray;
+    border: 1px solid black;
+}

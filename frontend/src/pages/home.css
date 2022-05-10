@@ -2,4 +2,9 @@
     background-color: #47498a;
     height: 150vh;
     width: 100%;
+    display: grid;
+    text-align: center;
+    color: whitesmoke;
+    font-size: 2rem;
+    padding-top: 13vh;
 }

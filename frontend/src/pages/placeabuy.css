@@ -8,9 +8,29 @@
     padding-top: 15vh;
 }
 
+#buyheading {
+    margin-bottom: -8vh;
+    text-align: center;
+}
+
 #buyform {
     background-color: white;
     border-radius: 2px;
+    display: grid;
+    grid-template-columns: auto;
     height: 65vh;
     width: 70vw;
+}
+
+#buyinputs {
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: space-evenly;
+}
+
+.buyinputs {
+    height: 7vh;
+    width: 20vw;
+    margin-top: 2vh;
+    font-size: 1.2rem;
 }

@@ -7,9 +7,10 @@
 
 #campaignsummary {
     border: 2px solid grey;
-    margin-right: 20vw;
+    margin-right: 2vw;
     padding: 2vh;
-    width: 48vw;
+    margin-right: 15vw;
+    width: 50vw;
     height: 80vh;
     border-radius: 2px;
 }
@@ -21,14 +22,10 @@
     justify-content: space-evenly;
 }
 
-.container {
-    width: 18vw;
-    height: 60vh;
-    background-color: lightgrey
-}
-
 #btncontainer {
     margin-bottom: 5vh;
+    display: grid;
+    justify-content: end;
 }
 
 #allaccountsbtn {
@@ -36,11 +33,10 @@
     border-radius: 30px;
     color: black;
     padding-top: 1vh;
-    font-size: 1.3rem;
     padding-bottom: 1vh;
-    margin-left: 31vw;
-    padding-left: 2.5vw;
-    padding-right: 1vw;
+    font-size: 1.2rem;
+    padding-left: 2vw;
+    padding-right: 2vw;
     justify-content: center;
     font-weight: 400;
     transition: background-color .2s;
@@ -49,4 +45,9 @@
 #allaccountsbtn:hover {
     background-color: #63a6e5;
     color: white;
+}
+
+#clientlist {
+    margin-left: -8vw;
+    padding-top: 5vh;
 }
