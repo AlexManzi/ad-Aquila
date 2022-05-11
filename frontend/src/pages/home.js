@@ -11,7 +11,7 @@ function Home() {
           <p>Our all-in-one social media management platform unlocks the full potential of social to transform not just your marketing strategy—but every area of your organization.</p>
           <Link to="/signup" style={{textDecoration:"none"}}><button id="signuphome">Sign Up!</button></Link>
           </div>
-          <h2>Good Vibes</h2>
+            <img src={require('../pics/homedisplay.png')} alt="demo" id="homepic"></img>
           </div>
           <div id="infobar">
             <div id="wordout"><img src={require('../pics/wordout2.png')} alt="demo" id="demopic"></img><p className='bartext'>Our easily accessible platform allows you and your team to easily manage campaigns across all forms of media</p></div>
