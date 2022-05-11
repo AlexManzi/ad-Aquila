@@ -18,16 +18,81 @@
 }
 
 #infobar {
-    height: 35vh;
+    display: grid;
+    grid-template-columns: 33vw 33vw 33vw;
+    height: 40vh;
     width: 100%;
     background-color: white;
-    margin-top: -10vh;
+    margin-top: 8vh;
 }
 
 #infobar2 {
     height: 60vh;
     width: 40%;
-    background-color: #6DB8FE;;
-    margin-top: 0vh;
+    background-color: #6DB8FE;
+    margin-top: 10vh;
 }
+
+#demopic1 {
+    height: 400px;
+    width: auto;
+    margin-top: -685px;
+    margin-left: auto;
+    margin-right: 5vw;
+    border-radius: 10px;
+}
+
+#imgbackground {
+    background-color: #FFBA53;
+    height: 400px;
+    width: 800px;
+    margin-top: -595px;
+    border-radius: 10px;
+    margin-left: auto;
+    margin-right: 3vw;
+}
+
+#signuphome {
+    background-color: #6DB8FE;
+    font-size: 1.4rem;
+    padding-left: 4vw;
+    padding-right: 4vw;
+    padding-top: 2vh;
+    padding-bottom: 2vh;
+    border: 1px solid #6DB8FE;
+}
+
+#signuphome:hover {
+    background-color: #63a6e5;
+    color: white;
+}
+
+#wordout {
+    padding-top: 5vh;
+    
+}
+
+#analytics {
+    padding-top: 5vh;
+    
+}
+
+#service {
+    padding-top: 5vh;
+    
+}
+
+#demopic {
+    height: 150px;
+    width: auto;
+}
+
+.bartext {
+    color: black;
+    font-size: 1.3rem;
+    margin-left: 3vw;
+    margin-right: 3vw;
+}
+
+
 
