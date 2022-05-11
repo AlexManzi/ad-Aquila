@@ -1,13 +1,25 @@
 #resinfo {
     display: grid;
-    grid-template-columns: auto 1vw 1vw 1vw .5vw 1vw;
+    grid-template-columns: 7vw 4vw 4vw 4vw 3vw 2vw;
     justify-content: space-evenly;
     background-color: lightgray;
     border: 1px solid black;
 }
 
 #trashbin {
-    height: 30px;
+    height: 25px;
     width: auto;
-    padding-top: 1.7vh;
+    padding-top: 2vh;
+}
+
+#spotdate {
+    white-space: nowrap;
+}
+
+#spotlength {
+    margin-left: 2.5vw;
+}
+
+#spottime {
+    white-space: nowrap;
 }

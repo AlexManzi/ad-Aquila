@@ -1,8 +1,23 @@
-import React from 'react'
+import React, {useState, useEffect } from 'react'
 import Campaigncard from '../components/campaigncard'
 import './campaignpage.css'
 
 function Campaignpage({loggedIn}) {
+    let [selectedClient, setSelectedClient] = useState(null)
+
+    useEffect(() => {
+        const data = window.localStorage.getItem('clientInfo')
+        setSelectedClient(JSON.parse(data))
+    }, [])
+    
+    useEffect(() => {
+        window.localStorage.setItem('clientInfo', JSON.stringify(selectedClient))
+    }, [selectedClient])
+    
+    
+    function clickInfo(e) {
+        setSelectedClient(e); 
+    }
 
     let getInfo = (loggedIn ? loggedIn.clients : "")
 
@@ -11,11 +26,10 @@ function Campaignpage({loggedIn}) {
             <Campaigncard 
                 key={client.id}
                 client={client}
+                clickInfo={clickInfo}
                 />
         )
     }) : "" )
-
-    let randomColor = Math.floor(Math.random()*16777215).toString(16);
 
 return (
     <div id="campaignpage">

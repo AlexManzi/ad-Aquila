@@ -41,6 +41,12 @@
     padding-bottom: 1.5vh;
     padding-left: 2vw;
     padding-right: 2vw;
+    border: 1px solid #6DB8FE;
+}
+
+#Pbutton:hover {
+    background-color: #63a6e5;
+    color: white;
 }
 
 #Bbutton {
@@ -51,6 +57,12 @@
     padding-bottom: 1.5vh;
     padding-left: 2vw;
     padding-right: 2vw;
+    border: 1px solid #6DB8FE;
+}
+
+#Bbutton:hover {
+    background-color: #63a6e5;
+    color: white;
 }
 
 #Ebutton {
@@ -60,6 +72,12 @@
     padding-bottom: 1.5vh;
     padding-left: 2vw;
     padding-right: 2vw;
+    border: 1px solid #6DB8FE;
+}
+
+#Ebutton:hover {
+    background-color: #63a6e5;
+    color: white;
 }
 
 .priceline {

@@ -6,7 +6,7 @@ class ReservationsController < ApplicationController
     end
 
     def create
-        res = Reservation.create!(params.permit(:price, :spot_length, :dates, :spot_time, :isci_code, :client_id))
+        res = Reservation.create!(params.permit(:price, :spot_preview, :spot_length, :dates, :spot_time, :isci_code, :client_id))
         render json: res
     rescue ActiveRecord::RecordInvalid => invalid
         render json: {errors: invalid.record.errors }, status:420

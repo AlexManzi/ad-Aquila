@@ -18,6 +18,8 @@ function Clientpage({selectedClient}) {
   let clientStation = (client ? client.station : "")
   let clientComments = (client ? client.comments : "")
   let clientId = (client ? client.id : "" )
+  let priceArr = []
+  let sum = 0
 
   useEffect(() => {
     const data = window.localStorage.getItem('clientInfo')
@@ -41,9 +43,37 @@ function Clientpage({selectedClient}) {
         key={res.id}
         res={res}
         handleDelete={handleDelete}
+        formatPrice={formatPrice}
+        formatTime={formatTime}
         />
     )
   }) : "")
+
+  let getsClientBudget = reservations.forEach(res => {
+    priceArr.push(res.price)
+    })
+
+  for (let i = 0; i < priceArr.length; i++) {
+    sum += priceArr[i]
+  }
+  console.log(sum)
+  console.log(clientBudget)
+  let startingBudget = clientBudget
+  let totalBudget = (clientBudget - sum);
+  
+  function formatPrice(dollars){
+    return dollars.toLocaleString('en-US', {
+      style: 'currency',
+      currency: 'USD',
+    })
+  }
+
+  function formatTime(time) {
+    return time.toLocaleString('en-US', { 
+      hour: 'numeric', 
+      hour12: true ,
+    })
+  }
 
   function addReservation(e) {
       e.preventDefault();
@@ -58,7 +88,7 @@ function Clientpage({selectedClient}) {
               spot_time: spotTime,
               isci_code: isci,
               client_id: clientId,
-              dates: spotDate
+              spot_preview: spotDate
             })
             })
             .then(resp => resp.json()
@@ -97,11 +127,12 @@ function Clientpage({selectedClient}) {
   return (
     <div id="wholerespage">
     <div id="respage">
-      <h2 className='clientInfo'>{clientName}</h2>
-      <h3 className='clientInfo'>{clientStation}</h3>
-      <h3 className='clientInfo'>{clientBudget}</h3>
-      <h3 className='clientInfo'>{clientContact}</h3>
+      <h2 className='clientInfo'>Your Campaign {clientName}</h2>
+      <h3 className='clientInfo'>Is Running on {clientStation}</h3>
+      <h3 className='clientInfo'>Your Total Budget is: ${formatPrice(startingBudget)}, your remaining budget is: {formatPrice(totalBudget)}</h3>
+      <h3 className='clientInfo'>For any issues reach out to {clientContact}</h3>
       <h3 className='clientInfo'>{clientComments}</h3>
+      {getsClientBudget}
       </div>
       <div id="clientSuperParent">
       <div id="clientresparent">
@@ -110,12 +141,14 @@ function Clientpage({selectedClient}) {
         <h3>Spot Time</h3>
         <h3>Spot Date</h3>
         <h3>ISCI</h3>
+        <h3>Delete</h3>
       </div>
       {resInfo}
       </div>
         <div id="resinfopost">
+          <h3 id="adADDheading">Enter a new ad placement</h3>
           <input onChange={handleSetLength} className="resinput" placeholder="Enter Spot Length"></input>
-          <input onChange={handleSetPrice} className="resinput" placeholder="Enter Spot Price"></input>
+          <input onChange={handleSetPrice} className="resinput" placeholder="Enter Spot Price" type="number"></input>
           <input onChange={handleSetTime} className="resinput" placeholder="Enter Spot Time" type="time" step="1"></input>
           <input onChange={handleSetDate} className="resinput" placeholder="Enter Spot Date" type="date"></input>
           <input onChange={handleSetIsci} className="resinput" placeholder="Enter ISCI Code"></input>

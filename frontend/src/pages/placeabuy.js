@@ -4,7 +4,7 @@ import "./placeabuy.css"
 function Placeabuy() {
     let [campClient, setCampClient] = useState('')
     let [station, setStation] = useState('')
-    let [totBudget, setTotBudget] = useState('')
+    let [totBudget, setTotBudget] = useState(null)
     let [contactInfo, setContactInfo] = useState('')
     let [comments, setComments] = useState('')
 
@@ -59,7 +59,7 @@ function Placeabuy() {
             <div id="buyinputs">
             <input className="buyinputs" onChange={handleSetClient} placeholder='Enter The Campaign Client'></input>
             <input className="buyinputs" onChange={handleSetStation} placeholder='Enter The Station Provider'></input>
-            <input className="buyinputs" onChange={handleSetTotBudget} placeholder='Enter The Total Budget The Campaign'></input>
+            <input className="buyinputs" onChange={handleSetTotBudget} placeholder='Enter The Total Budget The Campaign' type="number"></input>
             <input className="buyinputs" onChange={handleSetContactInfo} placeholder='Enter The The Contact Info For The Buy'></input>
             </div>
             <div id="bottombuttons">

@@ -8,7 +8,7 @@
 #respage {
     display: grid;
     grid-template-columns: auto;
-    grid-template-rows: 8vh 8vh 8vh 8vh 8vh;
+    grid-template-rows: 8vh 8vh 8vh 8vh 8vh 8vh 4vh;
     padding-left: 40px;
 }
 
@@ -27,16 +27,15 @@
 
 #clientresparent {
     display: grid;
-    grid-template-columns: auto auto auto auto 1vw;
+    grid-template-columns: auto auto auto auto 2vw 1vw;
     justify-content: space-evenly;
-    
     background-color: #47498a;
     padding-right: 3vw;
     color: white;
 }
 
 #resinfopost {
-    margin-top: -30vh;
+    margin-top: -32vh;
     padding-left: 40px;
     display: grid;
     grid-template-columns: auto;
@@ -44,16 +43,17 @@
 
 .resinput {
     margin-bottom: 2vh;
+    height: 3vh;
 }
 
 #clientSuperParent {
-    height: 75vh;
+    height: 80vh;
     background-color: #47498a;
     margin-right: 4vw;
     margin-left: 8vw;
     overflow-y: scroll;
     border-radius: 2px;
-
+    border-bottom: 1px solid black;
 }
 
 #flightBtn {
@@ -63,4 +63,8 @@
     background-color: #6DB8FE;
     border-radius: 15px;
     border: 2px solid #6DB8FE;;
+}
+
+#adADDheading{
+    margin-top: -5vh;
 }

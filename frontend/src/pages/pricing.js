@@ -4,22 +4,23 @@ import './pricing.css'
 
 function Pricing() {
 
-// function handleCheckout(){
-//     fetch('http://localhost:3000/create-checkout-session',{
-//         method: "POST",
-//         headers: {'Content-Type': 'application/json'}, 
-//         body: JSON.stringify({
-//             price: 'prod_LQKKfH7pFt4BQq'
-//         }),
-//         credentials: "same-origin",
-//         })
-//         .then(resp=> resp.json())
-//         .then(data=>{
-//         window.location.href = data.url;
-//         })
-//         .catch(error => {
-//         })
-//     }
+function HandleCheckout(id){
+    fetch("/create-checkout-session",{
+        method: "POST",
+        headers: {'Content-Type': 'application/json'}, 
+        body: JSON.stringify({
+            id,
+        }),
+        })
+
+        .then((r) => {
+            if (r.ok) {
+                r.json().then((data) => {
+                    window.location.href = data.url;
+                })
+            }
+        })
+    }
 
     return (
     <div id="pricingpage">
@@ -33,7 +34,7 @@ function Pricing() {
             </div>
             <p>For personal use and managing a few accounts</p>
             <form action="/create-checkout-session" method="POST">
-                <button id="Pbutton" type="submit">
+                <button id="Pbutton" type="submit" onClick={() => HandleCheckout(1)}>
                     Buy Now
                     </button>
             </form>
@@ -46,7 +47,7 @@ function Pricing() {
                 <p>per month</p>
             </div>
             <p>For businesses that want to sucessfully visualize campaigns</p>
-            <button id="Bbutton">Buy Now</button>
+            <button id="Bbutton" onClick={() => HandleCheckout(2)}>Buy Now</button>
             <hr className='priceline'></hr>
         </div>
         <div className="priceoption" id="enterprise">
@@ -56,7 +57,7 @@ function Pricing() {
                 <p>per month</p>
             </div>
             <p>For large companies that need to manage many accounts</p>
-            <button id="Ebutton">Buy Now</button>
+            <button id="Ebutton" onClick={() => HandleCheckout(3)}>Buy Now</button>
             <hr className='priceline'></hr>
         </div>
     </div>

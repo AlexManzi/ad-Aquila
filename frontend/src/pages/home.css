@@ -1,6 +1,6 @@
 #homepage {
     background-color: #47498a;
-    height: 150vh;
+    height: 250vh;
     width: 100%;
     display: grid;
     text-align: center;
@@ -9,3 +9,25 @@
     padding-top: 13vh;
     font-family: 'Lato', sans-serif;
 }
+
+#textParent {
+    display: grid;
+    grid-template-columns: 40vw auto;
+    padding-top: 5vh;
+    padding-left: 10vw;
+}
+
+#infobar {
+    height: 35vh;
+    width: 100%;
+    background-color: white;
+    margin-top: -10vh;
+}
+
+#infobar2 {
+    height: 60vh;
+    width: 40%;
+    background-color: #6DB8FE;;
+    margin-top: 0vh;
+}
+

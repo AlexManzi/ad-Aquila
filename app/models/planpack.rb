@@ -1,0 +1,2 @@
+class Planpack < ApplicationRecord
+end
