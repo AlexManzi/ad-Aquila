@@ -31,6 +31,30 @@
     width: 40%;
     background-color: #6DB8FE;
     margin-top: 10vh;
+    color: #112334;
+}
+
+#cliente {
+    font-size: 4rem;
+    margin-left: 3vw;
+    margin-right: 1vw;
+    text-align: start;
+}
+
+#capabilities {
+    text-align: end;
+    margin-right: 1vw;
+}
+
+#seefeatures {
+    font-size: 1.5rem;
+    transform:translateX(0) translateY(0);
+    transition:transform 1s ease-in-out;
+    color: #112334;
+}
+
+#seefeatures:hover {
+    transform:translateX(40px);
 }
 
 #demopic1 {
@@ -60,6 +84,7 @@
     padding-top: 2vh;
     padding-bottom: 2vh;
     border: 1px solid #6DB8FE;
+    color: #112334;
 }
 
 #signuphome:hover {
@@ -88,7 +113,7 @@
 }
 
 .bartext {
-    color: black;
+    color: #112334;
     font-size: 1.3rem;
     margin-left: 3vw;
     margin-right: 3vw;

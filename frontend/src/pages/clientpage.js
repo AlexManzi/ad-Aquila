@@ -44,7 +44,6 @@ function Clientpage({selectedClient}) {
         res={res}
         handleDelete={handleDelete}
         formatPrice={formatPrice}
-        formatTime={formatTime}
         />
     )
   }) : "")
@@ -65,13 +64,6 @@ function Clientpage({selectedClient}) {
     return dollars.toLocaleString('en-US', {
       style: 'currency',
       currency: 'USD',
-    })
-  }
-
-  function formatTime(time) {
-    return time.toLocaleString('en-US', { 
-      hour: 'numeric', 
-      hour12: true ,
     })
   }
 

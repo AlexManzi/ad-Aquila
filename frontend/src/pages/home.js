@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 import './home.css'
 
 function Home() {
@@ -8,7 +9,7 @@ function Home() {
           <div>
           <h1>Unleash Your Brand's Hidden Potential</h1>
           <p>Our all-in-one social media management platform unlocks the full potential of social to transform not just your marketing strategy—but every area of your organization.</p>
-          <button id="signuphome">Sign Up!</button>
+          <Link to="/signup" style={{textDecoration:"none"}}><button id="signuphome">Sign Up!</button></Link>
           </div>
           <h2>Good Vibes</h2>
           </div>
@@ -18,9 +19,10 @@ function Home() {
             <div id="service"><img src={require('../pics/service.png')} alt="demo" id="demopic"></img><p className='bartext'>Our designated customer service team works around the clock to make sure your business' needs are met and exceeded</p></div>
           </div>
           <div id="infobar2">
-            <h2>Reach a new clientele</h2>
-            <p>Plan, schedule and deliver upon allocations teamwide with cross-network publishing.</p>
-            <p id="seefeatures">See our Features</p>
+            <h2 id="cliente">Reach a new clientele</h2>
+            <p id="capabilities">Plan, schedule and deliver upon allocations teamwide with cross-network publishing</p>
+            <br></br>
+            <Link to="/pricing" style={{textDecoration:"none"}}><p id="seefeatures">See our Features →</p></Link>
           </div>
           <div id="imgbackground">
           </div>
