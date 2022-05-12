@@ -3,6 +3,11 @@ require 'stripe'
 
 Stripe.api_key = 'sk_test_51Ku26VIrI1eSQgI561Dnnm6IjPMmCEtVAoeIp6zDxbCyy0dLtTzKVeRfCAcwqYUGidzyyEgJjyf2ObrJc8HlK1dl00PqyvbgJU'
 
+def index
+    packs = Planpack.all 
+    render json: packs 
+end
+
 def add_plan
     accountAddPlan = Planpack.find(params[:id])
     session = Stripe::Checkout::Session.create({

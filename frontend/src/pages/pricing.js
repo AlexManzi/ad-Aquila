@@ -5,6 +5,7 @@ import './pricing.css'
 function Pricing() {
 
 function HandleCheckout(id){
+    console.log(id)
     fetch("/create-checkout-session",{
         method: "POST",
         headers: {'Content-Type': 'application/json'}, 
@@ -33,11 +34,9 @@ function HandleCheckout(id){
                 <p>per month</p>
             </div>
             <p>For personal use and managing a few accounts</p>
-            <form action="/create-checkout-session" method="POST">
-                <button id="Pbutton" type="submit" onClick={() => HandleCheckout(1)}>
+                <button id="Pbutton" onClick={() => HandleCheckout(1)}>
                     Buy Now
                     </button>
-            </form>
             <hr className='priceline'></hr>
         </div>
         <div className="priceoption" id="constitution">
