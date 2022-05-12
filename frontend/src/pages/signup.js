@@ -1,4 +1,5 @@
 import React, {useState} from 'react'
+import {Link} from 'react-router-dom'
 import './signup.css'
 
 function Signup() {
@@ -54,7 +55,7 @@ function Signup() {
     <div id="signuppage">
       <h2 id="signupheading">Get your next Campaign on Track</h2>
       <div id="signupbox">
-        <div id="names">
+        <div id="names1">
           <input className='inputs' placeholder='First Name' onChange={handleFName}></input>
           <input className='inputs' placeholder='Last Name' onChange={handleLName}></input>
         </div>
