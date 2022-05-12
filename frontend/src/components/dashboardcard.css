@@ -1,6 +1,10 @@
 .container {
     width: 18vw;
     height: 60vh;
-    background-color: lightgrey;
+    background-color: #6DB8FE;
     color: #112334;
+}
+
+#cardtext {
+    padding: 10px;
 }

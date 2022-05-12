@@ -3,7 +3,9 @@
     padding-top: 12vh;
     grid-template-columns: auto auto;
     font-family: 'Lato', sans-serif;
-    color: #112334;
+    color: whitesmoke;
+    border-radius: 2px;
+    padding-left: 1vw;
 }
 
 #respage {
@@ -11,6 +13,7 @@
     grid-template-columns: auto;
     grid-template-rows: 8vh 8vh 8vh 8vh 8vh 8vh 4vh;
     padding-left: 40px;
+    background-color: #112334;
 }
 
 #spottimes {
@@ -32,7 +35,7 @@
     justify-content: space-evenly;
     background-color: #47498a;
     padding-right: 3vw;
-    color: white;
+    color: whitesmoke;
 }
 
 #resinfopost {
@@ -40,6 +43,8 @@
     padding-left: 40px;
     display: grid;
     grid-template-columns: auto;
+    padding-right: 3vw;
+    padding-bottom: 2vh;
 }
 
 .resinput {
@@ -63,9 +68,14 @@
     font-size: 1rem;
     background-color: #6DB8FE;
     border-radius: 15px;
-    border: 2px solid #6DB8FE;;
+    border: 2px solid #6DB8FE;
 }
 
 #adADDheading{
     margin-top: -5vh;
 }
+
+::placeholder { 
+    color: #112334;
+    opacity: 1; 
+  }

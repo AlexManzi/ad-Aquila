@@ -15,6 +15,9 @@ Rails.application.routes.draw do
   get "/clientReservations", to:"clients#showReservationsForClient"
   post "/create-checkout-session", to: "planpacks#add_plan"
 
+  get '*path', to: "application#fallback_index_html", constraints: ->(request) do
+  !request.xhr? && request.format.html?
+
   # Defines the root path route ("/")
   # root "articles#index"
 end

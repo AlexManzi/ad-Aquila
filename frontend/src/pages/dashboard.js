@@ -51,7 +51,6 @@ function Dashboard({loggedIn}) {
   }
 
 
-
   console.log(selectedClient)
 
 
@@ -67,11 +66,13 @@ function Dashboard({loggedIn}) {
             </div>
         </div>
         <div id="campaignbio">
+          <div id="welcomeBack">
             <h2>Welcome back, {guestName}!</h2>
             <h3>How's Business at {guestOrg} today?</h3>
+          </div>
             <br></br>
             <div id="clientlist">
-            <h2>Active Clients</h2>
+            <h1>Active Clients</h1>
             {mappedArray}
             </div>
         </div>

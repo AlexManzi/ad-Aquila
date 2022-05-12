@@ -1,8 +1,16 @@
-import React from 'react'
+import React, {useEffect} from 'react'
 import { Link } from 'react-router-dom'
 import './home.css'
 
 function Home() {
+
+  useEffect(() => {
+    document.body.style.overflow = 'unset';
+  }  
+)
+
+
+
   return (
     <div id="homepage">
         <div id="textParent">

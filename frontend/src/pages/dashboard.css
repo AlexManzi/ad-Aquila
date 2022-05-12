@@ -8,13 +8,15 @@
 }
 
 #campaignsummary {
-    border: 2px solid grey;
+    border: 2px solid #112334;
     margin-right: 2vw;
     padding: 2vh;
     margin-right: 15vw;
     width: 50vw;
     height: 80vh;
     border-radius: 2px;
+    background-color: #112334;
+    color: whitesmoke;
 }
 
 #quicklookcontainer {
@@ -51,5 +53,22 @@
 
 #clientlist {
     margin-left: -8vw;
-    padding-top: 5vh;
+    padding-top: 1vh;
+    margin-top: -25vh;
+    margin-right: 10vw;
+    padding-left: 2vw;
+    padding-bottom: 2vh;
+    color: whitesmoke;
+    background-color: #112334;
+    border-radius: 2px;
 }
+
+#welcomeBack {
+    background-color: #FFBA53;
+    padding-top: 1vh;
+    padding-left: 2vw;
+    padding-right: 2vw;
+    padding-bottom: 30vh;
+    border-radius: 2px;
+}
+

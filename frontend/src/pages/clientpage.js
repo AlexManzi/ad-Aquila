@@ -1,8 +1,9 @@
 import React, { useState, useEffect} from 'react'
 import "./clientpage.css"
 import Clientres from '../components/clientres'
+import Donut from '../components/donut'
 
-function Clientpage({selectedClient}) {
+function Clientpage({selectedClient, testPass}) {
   let [client, setClient] = useState(null)
   let [spotLength, setSpotLength] = useState('')
   let [spotPrice, setSpotPrice] = useState('')
@@ -59,6 +60,14 @@ function Clientpage({selectedClient}) {
   console.log(clientBudget)
   let startingBudget = clientBudget
   let totalBudget = (clientBudget - sum);
+
+
+let ringChart = <Donut
+              startingBudget={startingBudget}
+              totalBudget={totalBudget}
+              />
+
+
   
   function formatPrice(dollars){
     return dollars.toLocaleString('en-US', {

@@ -1,4 +1,8 @@
 #names {
     color: #112334;
     white-space: nowrap;
+    border: 1px solid #6DB8FE;
+    background-color: #6DB8FE;
+    border-radius: 2px;
+    width: 15vw;
 }

@@ -52,7 +52,7 @@ function App() {
         <Route exact path ="/login" element={<Login setLoggedIn={setLoggedIn} />}/>
         <Route exact path="/signup" element={<Signup />}/>
         <Route exact path="/pricing" element={<Pricing />}/>
-        <Route exact path="/dashboard" element={<Dashboard loggedIn={loggedIn}/>}/>
+        <Route exact path="/dashboard" element={<Dashboard loggedIn={loggedIn} />}/>
         <Route exact path="/campaigns" element={<Campaignpage loggedIn={loggedIn}/>}/>
         <Route exact path="/placebuy" element={<Placeabuy />}/>
         <Route exact path="/clientpage" element={<Clientpage />}/>
