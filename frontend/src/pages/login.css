@@ -1,7 +1,7 @@
 #loginparent{
     background-image: url('../pics/bg3.png');
-    background-repeat:initial;
-    background-size:cover;
+    background-repeat:no-repeat;
+    background-size:100%;
     height: 110vh;
     display: grid;
     grid-template-columns: auto;
@@ -12,11 +12,11 @@
 
 
 #loginbox {
-    margin-top: 29vh;
+    margin-top: 30vh;
     padding-bottom: 12vh;
     margin-left: 8vw;
     margin-right: 4vw;
-    height: 20vh;
+    height: 15vh;
     width: 35vw;
     background-color: white;
     border-radius: 5px;   

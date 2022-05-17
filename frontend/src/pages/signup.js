@@ -53,6 +53,7 @@ function Signup() {
   return (
     <form onSubmit={handleSubmitLogin}>
     <div id="signuppage">
+      <div id="sboxparent">
       <h2 id="signupheading">Get your next Campaign on Track</h2>
       <div id="signupbox">
         <div id="names1">
@@ -63,6 +64,7 @@ function Signup() {
         <input className='inputs' placeholder='Enter Your Password' type="password" onChange={handlePassword}></input>
         <input className='inputs' placeholder='Enter Your Organization' onChange={handleOrganization}></input>
         <button onClick={handleSubmitLogin}>Sign up!</button>
+      </div>
       </div>
     </div>
     </form>
