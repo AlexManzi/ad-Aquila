@@ -3,7 +3,7 @@
     padding-top: 12vh;
     grid-template-columns: auto auto;
     font-family: 'Lato', sans-serif;
-    color: whitesmoke;
+    color:#112334;
     border-radius: 2px;
     padding-left: 1vw;
 }
@@ -13,7 +13,7 @@
     grid-template-columns: auto;
     grid-template-rows: 8vh 8vh 8vh 8vh 8vh 8vh 4vh;
     padding-left: 40px;
-    background-color: #112334;
+    color: #112334;;
 }
 
 #spottimes {
@@ -64,11 +64,18 @@
 
 #flightBtn {
     width: 20vw;
+    padding-top: 5px;
+    padding-bottom: 5px;
     margin-left: 12vw;
     font-size: 1rem;
     background-color: #6DB8FE;
     border-radius: 15px;
     border: 2px solid #6DB8FE;
+}
+
+#flightBtn:hover {
+    background-color: #63a6e5;
+    color: white;
 }
 
 #adADDheading{

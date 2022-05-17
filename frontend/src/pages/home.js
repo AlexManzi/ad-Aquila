@@ -19,7 +19,7 @@ function Home() {
           <p>Our all-in-one social media management platform unlocks the full potential of social to transform not just your marketing strategy—but every area of your organization.</p>
           <div id="homebuttons">
           <Link to="/signup" style={{textDecoration:"none"}}><button id="signuphome">Sign Up!</button></Link>
-          <a href="https://calendly.com/adaquila/15min" target="_blank"><button id="signuphome1">Request a Demo!</button></a>
+          <a href="https://calendly.com/adaquila/15min" target="_blank"><button id="signuphome1">Book a Demo!</button></a>
           </div>
           </div>
             <img src={require('../pics/homedisplay.png')} alt="demo" id="homepic"></img>

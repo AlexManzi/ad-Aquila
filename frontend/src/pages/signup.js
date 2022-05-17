@@ -60,7 +60,7 @@ function Signup() {
           <input className='inputs' placeholder='Last Name' onChange={handleLName}></input>
         </div>
         <input className='inputs' placeholder='Enter Your Email' onChange={handleEmail}></input>
-        <input className='inputs' placeholder='Enter Your Password' onChange={handlePassword}></input>
+        <input className='inputs' placeholder='Enter Your Password' type="password" onChange={handlePassword}></input>
         <input className='inputs' placeholder='Enter Your Organization' onChange={handleOrganization}></input>
         <button onClick={handleSubmitLogin}>Sign up!</button>
       </div>
