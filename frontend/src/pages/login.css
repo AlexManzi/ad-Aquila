@@ -60,3 +60,11 @@
     color: darkgreen;
 }
 
+@media (max-width: 370) {
+    #loginparent {
+        height: 33%;
+        width: auto;
+    }
+}
+    
+

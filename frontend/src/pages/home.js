@@ -29,15 +29,19 @@ function Home() {
             <div id="analytics"><img src={require('../pics/analytics.png')} alt="demo" id="demopic"></img><p className='bartext'>Use Analytics to monitor allocations and create orders for future campaigns</p></div>
             <div id="service"><img src={require('../pics/service.png')} alt="demo" id="demopic"></img><p className='bartext'>Our designated customer service team works around the clock to make sure your business' needs are met and exceeded</p></div>
           </div>
+          <div id="inbar2parent">
           <div id="infobar2">
             <h2 id="cliente">Reach a new clientele</h2>
             <p id="capabilities">Plan, schedule and deliver upon allocations teamwide with cross-network publishing</p>
             <br></br>
             <Link to="/pricing" style={{textDecoration:"none"}}><p id="seefeatures">See our Features →</p></Link>
           </div>
-          <div id="imgbackground">
+          <div id="picandshadow">
+            <div id="imgbackground">
+            </div>
+            <img src={require('../pics/demo.png')} alt="demo" id="demopic1"></img>
           </div>
-          <img src={require('../pics/demo.png')} alt="demo" id="demopic1"></img>
+          </div>
           <div id="bottominfo">
           <div id="emailbar">
             <h3 id="emaillist">Subscribe to our Email List!</h3><button id="joinButton">Join Now</button>

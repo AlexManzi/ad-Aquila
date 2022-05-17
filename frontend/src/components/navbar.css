@@ -12,6 +12,7 @@
     font-size: .7rem;
     font-family: 'Lato', sans-serif;
     color: #112334;
+    max-height: 70px;
 }
 
 #logo {
