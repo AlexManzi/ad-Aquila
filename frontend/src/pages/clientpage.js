@@ -28,7 +28,7 @@ function Clientpage({selectedClient, testPass}) {
   }, [])
 
   useEffect(() => {
-    let ternary = (client ? fetch(`/clientReservations/?id=${clientId}`, {
+    let ternary = (client ? fetch(`/api/clientReservations/?id=${clientId}`, {
       method: "GET",
       headers: {
       "Content-Type": "application/json",
@@ -97,7 +97,7 @@ let ringChart = <Donut
   )}
 
   function handleDelete(id) {
-    fetch(`/reservations/${id}`, {
+    fetch(`/api/reservations/${id}`, {
       method: 'DELETE',
     })
     .then(res => res.text()) // or res.json()

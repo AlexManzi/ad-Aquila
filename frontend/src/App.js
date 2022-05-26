@@ -27,7 +27,7 @@ function App() {
   console.log(loggedIn)
 
   useEffect(() => {
-    fetch("/me").then((response) => {
+    fetch("/api/me").then((response) => {
       if (response.ok) {
         response.json()
         .then((data) => setLoggedIn(data))
