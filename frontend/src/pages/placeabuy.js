@@ -15,7 +15,7 @@ function Placeabuy() {
 
     function handleAddClient(e) {
         e.preventDefault();
-        fetch("/clients", {
+        fetch("/api/clients", {
             method: "POST",
             headers: {
             "Content-Type": "application/json",

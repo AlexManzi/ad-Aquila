@@ -12,6 +12,7 @@ function Home() {
 
 
   return (
+    <div id="wholeHpage">
     <div id="homepage">
         <div id="textParent">
           <div>
@@ -57,6 +58,7 @@ function Home() {
             <p>Github</p>
           </div>
           </div>
+    </div>
     </div>
   )
 }

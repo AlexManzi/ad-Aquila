@@ -78,7 +78,7 @@ let ringChart = <Donut
 
   function addReservation(e) {
       e.preventDefault();
-        fetch("/reservations", {
+        fetch("/api/reservations", {
             method: "POST",
             headers: {
             "Content-Type": "application/json",

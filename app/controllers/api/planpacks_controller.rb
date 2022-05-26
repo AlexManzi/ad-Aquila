@@ -1,4 +1,4 @@
-class PlanpacksController < ApplicationController
+class Api::PlanpacksController < ApplicationController
 require 'stripe'
 
 Stripe.api_key = 'sk_test_51Ku26VIrI1eSQgI561Dnnm6IjPMmCEtVAoeIp6zDxbCyy0dLtTzKVeRfCAcwqYUGidzyyEgJjyf2ObrJc8HlK1dl00PqyvbgJU'

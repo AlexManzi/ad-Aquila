@@ -5,7 +5,7 @@ import './navbar.css'
 function Navbar({user, loggedIn}) {
 
     function handleLogout() {
-        fetch("/logout", {
+        fetch("/api/logout", {
         method: "DELETE",
         })
     }
